@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div class='menu'>
+            <a href="https://github.com/VlADOOSit">About us</a>
+            <a href="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg">Our team</a>
+            <a href="">Future</a>
+            <a href="https://www.youtube.com/watch?v=CxgOKJh4zWE&t=17282s">Info</a>
+        </div>
+        <h1>Calculator</h1>
+        <div class="selector">
+            <div class="item" onclick="show_calc()">kg/g</div>
+            <div class="item">km/m</div>
+            <div class="item">C/K</div>
+        </div>
+        <div class="container">
+            <div class="memory">
+                <p id="mem">...</p>
+            </div>
+            <div class="screen">
+                <input id="input" type="text" autocomplete="off" value="0" readonly/>
+            </div>
+            <div class="buttons">
+
+                <div class="btn blue" onclick="mc()">MC</div>
+                <div class="btn blue" onclick="mr()">MR</div>
+                <div class="btn blue" onclick="mplus()">M+</div>
+                <div class="btn blue" onclick="mminus()">M-</div>
+                <div class="btn blue" onclick="back()">&larr;</div>
+
+                <div class="btn blue" onclick="clean()">A/C</div>
+                <div class="btn blue" onclick="mx_sqrt()">&radic;</div>
+                <div class="btn blue" onclick="plusminus()">+/-</div>
+                <div class="btn blue" onclick="persent()">%</div>
+                <div class="btn blue" onclick="clickbtn('/')">/</div>
+
+                <div class="btn blue" onclick="clickbtn('(')">(</div>
+                <div class="btn" onclick="clickbtn('7')">7</div>
+                <div class="btn" onclick="clickbtn('8')">8</div>
+                <div class="btn" onclick="clickbtn('9')">9</div>
+                <div class="btn blue" onclick="clickbtn('*')">&times;</div>
+
+                <div class="btn blue" onclick="clickbtn(')')">)</div>
+                <div class="btn" onclick="clickbtn('4')">4</div>
+                <div class="btn" onclick="clickbtn('5')">5</div>
+                <div class="btn" onclick="clickbtn('6')">6</div>
+                <div class="btn blue" onclick="clickbtn('-')">-</div>
+
+                <div class="btn blue" onclick="factorial()">X!</div>
+                <div class="btn" onclick="clickbtn('1')">1</div>
+                <div class="btn" onclick="clickbtn('2')">2</div>
+                <div class="btn" onclick="clickbtn('3')">3</div>
+                <div class="btn plus blue" onclick="clickbtn('+')">+</div>
+
+                <div class="btn blue" onclick="power_build()">xⁿ</div>
+                <div class="btn" onclick="clickbtn('0')">0</div>
+                <div class="btn" onclick="clickbtn('.')">.</div>
+                <div class="btn blue" onclick="result()">=</div>
+
+            </div>
+        </div>
+        <p class="footer">
+            Developed by Vlad Kharkovskiy and Dashenko Ilya!
+        </p>
+        <div class="kg_container">
+            <div class="kg">
+                <div class="cange">
+                    <div class="convertFrom">
+                        <select id="qqq" onchange="fun1()">
+                            <option style="color:gray" value="kg" selected>kg</option>
+                            <option style="color:gray" value="g">g</option>
+                            <option style="color:gray" value="mg">mg</option>
+                            <option style="color:gray" value="t">t</option>
+                        </select>
+                    <input id="input2" type="text" autocomplete="off" value="0" readonly/>
+                </div>
+                <div class="cange" >
+                    <div class="convertFrom"  >
+                        <select id="aaa" onchange="fun1()">
+                            <option style="color:gray" value="g" selected>g</option>
+                            <option style="color:gray" value="kg">kg</option>
+                            <option style="color:gray" value="mg">mg</option>
+                            <option style="color:gray" value="t">t</option>
+                        </select>
+                    <input id="input3" type="text" autocomplete="off" value="0" readonly/>
+                </div>
+                
+            </div>
+            <div class="buttons kg">
+                <div class="btn blue" onclick="clickkg(7)">7</div>
+                <div class="btn blue" onclick="clickkg(8)">8</div>
+                <div class="btn blue" onclick="clickkg(9)">9</div>
+
+                <div class="btn blue" onclick="clearkg()">&larr;</div>
+
+                <div class="btn blue" onclick="clickkg(4)">4</div>
+                <div class="btn blue" onclick="clickkg(5)">5</div>
+                <div class="btn blue" onclick="clickkg(6)">6</div>
+                <div class="btn blue" onclick="conv()">Conv</div>
+
+                <div class="btn blue" onclick="clickkg(1)">1</div>
+                <div class="btn blue" onclick="clickkg(3)">2</div>
+                <div class="btn blue" onclick="clickkg(3)">3</div>
+
+                <div class="btn blue" onclick="clickkg(0)">0</div>
+            </div>
+        </div>
+        <p class="footer">
+            Developed by Vlad Kharkovskiy and Dashenko Ilya!
+        </p>
+        <script src="js/script.js"></script>
+    </body>
+</html>
